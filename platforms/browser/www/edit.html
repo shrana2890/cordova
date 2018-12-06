@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Edit profile</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+       <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+       <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  </head>
+  <body>
+
+
+    <div data-role="page">
+
+      <div data-role="header">
+        <span id="userid"></span>
+
+      </div><!-- /header -->
+
+
+        <img id="photoContainer" style="border:1px solid red; max-width:100%">
+    select your profile picture
+
+    <!-- Choose an existing photo from their phone’s gallery -->
+    <input type="button" data-clear-btn="true" name="file-2" id="pickPhotoButton" value="gallery">
+    <!-- Take a photo with their camera -->
+    <input type="button" id="takePhotoButton" value="Take Photo">
+    <!-- Change their name -->
+    <input type="text" data-clear-btn="true" name="text-3" id="name" value="" placeholder="Name">
+
+    <!-- Change their location -->
+    <input type="text" data-clear-btn="true" name="text-3" id="location" value="" placeholder="Location">
+
+<!-- Change their description -->
+    <input type="text" data-clear-btn="true" name="text-3" id="description" value="" placeholder="change your description">
+
+
+
+    <!-- Change their password -->
+    <input type="text" data-clear-btn="true" name="text-3" id="password" value="" placeholder="change your password">
+
+<!-- Change their date of birth -->
+    <input type="text" data-clear-btn="true" name="text-3" id="dob" value="" placeholder="DD/MM/YY">
+ <input type="text" data-clear-btn="true" name="text-3" id="phone" value="" placeholder="phone">
+
+
+      <input type="submit" id="update" value="Update Profile">
+      <button id="home">Home Page</button>
+      <button id="goBack">Go back</button>
+      <!-- <input type="submit" id="update" value="Contact"> -->
+
+
+</div>
+ <script type="text/javascript"  src="cordova.js"></script>
+
+    <script type="text/javascript" src="js/edit.js"></script>
+  </body>
+</html>
